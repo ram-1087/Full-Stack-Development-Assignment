@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Full Stack Development's portfolio to provide details about Front End and Back End technologies"/>
+  <meta name="keywords" content="Full Stack Development, HTML, CSS, Bootstrap, Javascript, Portfolio">
+  <meta name="author" content="Tika Ram Pokharel">
+  <title>JavaScript - Interactive Portfolio</title>
+
+  <!-- Bootstrap + FontAwesome -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+
+  <style>
+    body { font-family: 'Segoe UI', sans-serif; background-color: #f8f9fa; }
+    .navbar { box-shadow: 0 4px 12px rgba(0,0,0,0.2); }
+    .hero { background: linear-gradient(135deg, #f37335, #fdc830); color: white; text-align: center; padding: 120px 20px; }
+    .hero h1 { font-size: 3rem; font-weight: 700; margin-bottom: 15px; }
+    .badge-custom { margin: 5px; padding: 0.5em 0.8em; font-size: 1rem; }
+    .content-section { background: white; padding: 40px; border-radius: 15px; box-shadow: 0 8px 25px rgba(0,0,0,0.1); margin-bottom: 40px; transition: transform 0.3s; }
+    .content-section:hover { transform: translateY(-5px); }
+    .feature-card { transition: transform 0.3s, box-shadow 0.3s; }
+    .feature-card:hover { transform: translateY(-8px); box-shadow: 0 10px 25px rgba(0,0,0,0.15); }
+    footer { background: #343a40; color: white; padding: 40px 20px; }
+    footer a { color: white; transition: 0.3s; }
+    footer a:hover { color: #ffc107; }
+    .top-move { position: fixed; right: 20px; bottom: 40px; height: 55px; width: 55px; background: linear-gradient(135deg, #f37335, #fdc830); border-radius: 50%; display: none; justify-content: center; align-items: center; box-shadow: 0 6px 20px rgba(0,0,0,0.3); transition: transform 0.3s; z-index: 100; }
+    .top-move a { color: white; font-size: 1.8rem; }
+    .top-move:hover { transform: scale(1.1); }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand fw-bold fs-4" href="#">
+      <img src="assets/Images/my.png" alt="" width="50px" class="rounded"> Portfolio
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="fullstack.html">Full Stack?</a></li>
+        <li class="nav-item"><a class="nav-link" href="html.html">HTML</a></li>
+        <li class="nav-item"><a class="nav-link" href="css.html">CSS</a></li>
+        <li class="nav-item"><a class="nav-link" href="js.html">JavaScript</a></li>
+        <li class="nav-item"><a class="nav-link" href="bootstrap.html">Bootstrap</a></li>
+      </ul>
+      <div class="d-flex">
+        <a href="#" class="btn btn-outline-light me-2">Log in</a>
+        <a href="#" class="btn btn-warning">Register</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+  <div class="container">
+    <h1>JavaScript</h1>
+    <p>The scripting language that powers interactive web experiences.</p>
+    <span class="badge bg-success badge-custom">Dynamic</span>
+    <span class="badge bg-primary badge-custom">Client-Side</span>
+    <span class="badge bg-warning text-dark badge-custom">Versatile</span>
+  </div>
+</section>
+
+<!-- Content -->
+<div class="container py-5">
+
+  <!-- JS Introduction -->
+  <div class="content-section">
+    <h2>What is JavaScript?</h2>
+    <p class="fs-5">
+      JavaScript is a programming language used to create interactive and dynamic content on websites.  
+      It works alongside HTML and CSS to control behavior, animations, and user interactions.
+    </p>
+  </div>
+
+  <!-- Feature Cards -->
+  <div class="content-section">
+    <h2>JavaScript Features</h2>
+    <div class="row g-4 text-center">
+      <div class="col-md-4">
+        <div class="card feature-card p-3">
+          <i class="fas fa-code fa-2x mb-2 text-primary"></i>
+          <h5 class="card-title">Dynamic Content</h5>
+          <p class="card-text">Modify webpage content without reloading the page.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card feature-card p-3">
+          <i class="fas fa-bolt fa-2x mb-2 text-warning"></i>
+          <h5 class="card-title">Event Handling</h5>
+          <p class="card-text">React to user actions like clicks, hovers, and form inputs.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card feature-card p-3">
+          <i class="fas fa-globe fa-2x mb-2 text-success"></i>
+          <h5 class="card-title">API Interaction</h5>
+          <p class="card-text">Fetch data from servers and update pages dynamically.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Interactive JS Examples -->
+  <div class="content-section">
+    <h2>Interactive JavaScript Demo</h2>
+
+    <!-- Button Alert -->
+    <button class="btn btn-primary me-2" id="alertBtn">Show Alert</button>
+
+    <!-- Modal Trigger -->
+    <button class="btn btn-success me-2" data-bs-toggle="modal" data-bs-target="#demoModal">Open Modal</button>
+
+    <!-- Toast Trigger -->
+    <button class="btn btn-warning me-2" id="toastBtn">Show Toast</button>
+
+    <!-- Input Field -->
+    <div class="mt-3">
+      <input type="text" class="form-control w-50 d-inline-block" placeholder="Type something..." id="liveInput">
+      <span class="badge bg-info text-dark ms-2" id="liveOutput">Live Output</span>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="demoModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Bootstrap Modal</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">This is a demo modal powered by Bootstrap & JavaScript!</div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Toast -->
+<div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+  <div id="liveToast" class="toast bg-dark text-white" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-header">
+      <strong class="me-auto">Bootstrap Toast</strong>
+      <small>Now</small>
+      <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+    </div>
+    <div class="toast-body">Hello! This is an interactive toast message.</div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer>
+  <div class="container text-center">
+    <div class="row mb-3">
+      <div class="col">
+        <a href="index.html" class="text-white me-3">Home</a>
+        <a href="fullstack.html" class="text-white me-3">Full Stack?</a>
+        <a href="html.html" class="text-white me-3">HTML</a>
+        <a href="css.html" class="text-white me-3">CSS</a>
+        <a href="bootstrap.html" class="text-white me-3">Bootstrap</a>
+        <a href="js.html" class="text-white">JavaScript</a>
+      </div>
+    </div>
+    <div class="row mb-3">
+      <div class="col">
+        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f fa-lg"></i></a>
+        <a href="#" class="text-white me-3"><i class="fab fa-twitter fa-lg"></i></a>
+        <a href="#" class="text-white me-3"><i class="fab fa-linkedin fa-lg"></i></a>
+        <a href="#" class="text-white me-3"><i class="fab fa-instagram fa-lg"></i></a>
+        <a href="#" class="text-white"><i class="fab fa-whatsapp fa-lg"></i></a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col"><p class="mb-0">&copy; 2025 All Rights Reserved | Powered by Tika Ram Pokharel</p></div>
+    </div>
+  </div>
+</footer>
+
+<!-- Scroll to Top -->
+<div class="top-move d-flex" id="move-top">
+  <a href="#"><i class="fa fa-angle-up"></i></a>
+</div>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  const topBtn = document.getElementById("move-top");
+  window.addEventListener("scroll", () => { topBtn.style.display = window.scrollY > 150 ? "flex" : "none"; });
+
+  // Alert Button
+  document.getElementById("alertBtn").addEventListener("click", () => { alert("Hello! This is a JS Alert."); });
+
+  // Toast Button
+  const toastTrigger = document.getElementById("toastBtn");
+  const toastLiveExample = document.getElementById('liveToast');
+  toastTrigger.addEventListener('click', () => { new bootstrap.Toast(toastLiveExample).show(); });
+
+  // Live Input
+  const liveInput = document.getElementById("liveInput");
+  const liveOutput = document.getElementById("liveOutput");
+  liveInput.addEventListener("input", () => { liveOutput.textContent = liveInput.value || "Live Output"; });
+</script>
+</body>
+</html>

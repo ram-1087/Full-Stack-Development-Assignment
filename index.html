@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Meta Tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Full Stack Development's portfolio to provide details about Front End and Back End technologies"/>
+    <meta name="keywords" content="Full Stack Development, HTML, CSS, Bootstrap, Javascript, Portfolio">
+    <meta name="author" content="Tika Ram Pokharel">
+    <meta name="copyright" content="Copyright © 2025"/>
+    
+    <!-- Bootstrap & Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/Images/fabicon.png" type="image/x-icon" title="Atom">
+    <title>Stylish Portfolio</title>
+
+    <style>
+      /* Navbar */
+      .navbar {
+        background: linear-gradient(45deg, #007bff, #6610f2);
+      }
+      .navbar-brand img {
+        border: 2px solid white;
+      }
+      .nav-link {
+        transition: 0.3s;
+      }
+      .nav-link:hover {
+        color: #ffd700 !important;
+        transform: scale(1.1);
+      }
+
+      /* Hero Section */
+      .hero {
+        background: url('assets/Images/bg.jpg') center/cover no-repeat;
+        position: relative;
+        color: white;
+        text-align: center;
+        padding: 100px 20px;
+        border-radius: 12px;
+      }
+      .hero::after {
+        content: "";
+        position: absolute;
+        top: 0; left: 0; right: 0; bottom: 0;
+        background: rgba(0, 0, 0, 0.6);
+        border-radius: 12px;
+      }
+      .hero-content {
+        position: relative;
+        z-index: 2;
+      }
+
+      /* Cards */
+      .card-custom {
+        transition: all 0.4s ease;
+        border-radius: 12px;
+        box-shadow: 0px 4px 12px rgba(0,0,0,0.15);
+      }
+      .card-custom:hover {
+        transform: translateY(-10px) scale(1.03);
+        box-shadow: 0px 8px 20px rgba(0,0,0,0.25);
+      }
+
+      /* Footer */
+      footer {
+        background: linear-gradient(45deg, #343a40, #212529);
+        color: white;
+        padding-top: 30px;
+      }
+      footer a {
+        text-decoration: none;
+        color: #ffc107;
+      }
+      footer a:hover {
+        color: #fff;
+      }
+      .social-icons a {
+        margin: 0 10px;
+        font-size: 1.5rem;
+        transition: 0.3s;
+      }
+      .social-icons a:hover {
+        color: #ffc107;
+        transform: scale(1.2);
+      }
+
+      /* Scroll To Top */
+      .top-move {
+        position: fixed;
+        right: 20px;
+        bottom: 40px;
+        z-index: 100;
+        background: #007bff;
+        color: white;
+        border-radius: 50%;
+        height: 55px;
+        width: 55px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.3s;
+      }
+      .top-move:hover {
+        background: #6610f2;
+        transform: scale(1.1);
+      }
+    </style>
+  </head>
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand fs-4 fw-bold" href="#">
+      <img src="assets/Images/my.png" alt="" width="50" class="rounded-circle me-2">Portfolio
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="fullstack.html">Full Stack?</a></li>
+        <li class="nav-item"><a class="nav-link" href="html.html">HTML</a></li>
+        <li class="nav-item"><a class="nav-link" href="css.html">CSS</a></li>
+        <li class="nav-item"><a class="nav-link" href="js.html">JavaScript</a></li>
+        <li class="nav-item"><a class="nav-link" href="bootstrap.html">Bootstrap</a></li>
+      </ul>
+      <div class="d-flex ms-3">
+        <a href="#" class="btn btn-outline-light me-2">Log in</a>
+        <a href="#" class="btn btn-warning">Register</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero my-5">
+  <div class="hero-content">
+    <h1 class="display-4 fw-bold">Full Stack Development</h1>
+    <p class="lead">Building powerful, scalable, and modern web applications with frontend and backend integration.</p>
+    <a class="btn btn-warning btn-lg" href="fullstack.html">Learn More</a>
+  </div>
+</section>
+
+<!-- Technologies -->
+<div class="container py-5">
+  <h2 class="text-center fw-bold mb-5">Web Technologies</h2>
+  <div class="row g-4">
+    <div class="col-md-3">
+      <div class="p-4 card-custom bg-light">
+        <h3 class="text-primary">HTML</h3>
+        <p>Structure your website with semantic and accessible HTML elements.</p>
+        <a href="html.html" class="btn btn-danger">Explore</a>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="p-4 card-custom bg-light">
+        <h3 class="text-primary">CSS</h3>
+        <p>Style your pages beautifully with responsive CSS design techniques.</p>
+        <a href="css.html" class="btn btn-danger">Explore</a>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="p-4 card-custom bg-light">
+        <h3 class="text-primary">JavaScript</h3>
+        <p>Bring interactivity and dynamic features to your web apps.</p>
+        <a href="js.html" class="btn btn-danger">Explore</a>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="p-4 card-custom bg-light">
+        <h3 class="text-primary">Bootstrap</h3>
+        <p>Design responsive websites faster with pre-built components.</p>
+        <a href="bootstrap.html" class="btn btn-danger">Explore</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="text-center">
+  <div class="container">
+    <p class="mt-4">© 2025 All Rights Reserved | Designed by <strong>Anish Pokharel</strong></p>
+    <div class="social-icons my-3">
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-whatsapp"></i></a>
+    </div>
+  </div>
+</footer>
+
+<!-- Scroll To Top -->
+<a href="#" class="top-move"><i class="fa fa-angle-up fa-2x"></i></a>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  // Show/hide scroll-to-top button
+  window.addEventListener("scroll", function(){
+    document.querySelector(".top-move").classList.toggle("d-none", window.scrollY < 200);
+  });
+</script>
+</body>
+</html>

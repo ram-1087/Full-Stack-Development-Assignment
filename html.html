@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Full Stack Development's portfolio to provide details about Front End and Back End technologies"/>
+    <meta name="keywords" content="Full Stack Development, HTML, CSS, Bootstrap, Javascript, Portfolio">
+    <meta name="author" content="Tika Ram Pokharel">
+    <meta name="copyright" content="Copyright © 2025"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link rel="shortcut icon" href="assets/Images/fabicon.png" type="image/x-icon" title="Atom">
+    <title>HTML - Portfolio</title>
+    <style>
+      body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        background-color: #f8f9fa;
+      }
+      h1, h2 {
+        font-weight: bold;
+      }
+      .navbar {
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      }
+      .hero {
+        background: linear-gradient(135deg, #007bff, #00c6ff);
+        color: white;
+        text-align: center;
+        padding: 80px 20px;
+      }
+      .hero h1 {
+        font-size: 3rem;
+        font-weight: 700;
+      }
+      .content-section {
+        background: white;
+        border-radius: 12px;
+        padding: 40px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        margin-bottom: 40px;
+      }
+      .content-section ul li {
+        padding: 5px 0;
+      }
+      footer {
+        background: #212529;
+        color: #bbb;
+      }
+      footer a {
+        text-decoration: none;
+        color: #ffc107;
+        transition: color 0.3s;
+      }
+      footer a:hover {
+        color: #fff;
+      }
+      .social-icons i {
+        font-size: 1.5rem;
+        margin: 0 10px;
+        transition: transform 0.3s;
+      }
+      .social-icons i:hover {
+        transform: scale(1.2);
+        color: #ffc107;
+      }
+      /* Move to top button */
+      .top-move {
+        position: fixed;
+        right: 20px;
+        bottom: 50px;
+        background: #007bff;
+        border-radius: 50%;
+        height: 55px;
+        width: 55px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      }
+      .top-move a {
+        color: white;
+        font-size: 2rem;
+      }
+      .top-move:hover {
+        background: #0056b3;
+      }
+    </style>
+  </head>
+<body>
+<!-- Navbar start -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand fw-bold fs-4" href="#">
+      <img src="assets/Images/my.png" alt="Logo" width="50" class="rounded-circle me-2">Portfolio
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="fullstack.html">Full Stack?</a></li>
+        <li class="nav-item"><a class="nav-link" href="html.html">HTML</a></li>
+        <li class="nav-item"><a class="nav-link" href="css.html">CSS</a></li>
+        <li class="nav-item"><a class="nav-link" href="js.html">JavaScript</a></li>
+        <li class="nav-item"><a class="nav-link" href="bootstrap.html">Bootstrap</a></li>
+      </ul>
+      <div class="d-flex ms-3">
+        <a href="#" class="btn btn-outline-light me-2">Log in</a>
+        <a href="#" class="btn btn-warning">Register</a>
+      </div>
+    </div>
+  </div>
+</nav>
+<!-- Navbar End -->
+
+<!-- Hero Section -->
+<div class="hero">
+  <h1>HTML</h1>
+  <p>The foundation of every web page – simple yet powerful.</p>
+</div>
+
+<!-- Content Section -->
+<div class="container my-5">
+  <div class="content-section">
+    <h2>What is HTML?</h2>
+    <p>
+      HTML (HyperText Markup Language) is the standard markup language used to create and structure web pages. 
+      It provides the basic building blocks of a website, allowing developers to define elements like headings, paragraphs, links, images, and more.
+    </p>
+  </div>
+  
+  <div class="content-section">
+    <h2>Examples of HTML Elements</h2>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">Headings (h1 - h6)</li>
+      <li class="list-group-item">Paragraphs (p)</li>
+      <li class="list-group-item">Links (a)</li>
+      <li class="list-group-item">Images (img)</li>
+      <li class="list-group-item">Lists (ul, ol, li)</li>
+      <li class="list-group-item">Tables (table, tr, td)</li>
+      <li class="list-group-item">Forms (form, input, textarea)</li>
+    </ul>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="text-center text-lg-start">
+  <div class="container p-4">
+    <div class="row">
+      <div class="col-md-2 mb-3"><a href="index.html">Home</a></div>
+      <div class="col-md-2 mb-3"><a href="fullstack.html">Full Stack?</a></div>
+      <div class="col-md-2 mb-3"><a href="html.html">HTML</a></div>
+      <div class="col-md-2 mb-3"><a href="css.html">CSS</a></div>
+      <div class="col-md-2 mb-3"><a href="bootstrap.html">Bootstrap</a></div>
+      <div class="col-md-2 mb-3"><a href="js.html">JavaScript</a></div>
+    </div>
+    <hr>
+    <div class="social-icons mb-3">
+      <a href="#"><i class="fab fa-facebook-f text-light"></i></a>
+      <a href="#"><i class="fab fa-twitter text-light"></i></a>
+      <a href="#"><i class="fab fa-linkedin-in text-light"></i></a>
+      <a href="#"><i class="fab fa-instagram text-light"></i></a>
+      <a href="#"><i class="fab fa-whatsapp text-light"></i></a>
+    </div>
+    <p class="mb-0">© 2025 All rights reserved | Powered by Tika Ram Pokharel</p>
+  </div>
+</footer>
+
+<!-- Move to top button -->
+<div class="top-move" id="move-top">
+  <a href="#"><i class="fa fa-angle-up"></i></a>
+</div>
+
+<!-- JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"></script>
+<script>
+  // Show/Hide top button
+  $(window).scroll(function() {
+    $('#move-top')[$(window).scrollTop() <= 150 ? 'addClass' : 'removeClass']('d-none');
+  });
+</script>
+</body>
+</html>
